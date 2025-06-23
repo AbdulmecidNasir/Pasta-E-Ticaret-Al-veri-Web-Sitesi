@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PASTA WEB-SITESI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/chef.png">
+  </head>
+  <body>
+
+    <!--! Header Baslangici-->
+    <header class="header">
+        <a href="#" class ="logo">
+            <img src ="pastaResimleri/pngwing.com.png" alt = "logo">
+        </a>
+        <nav class="navbar normal-navbar">
+            <a href="#home" class="active">Anasayfa</a>
+            <a href="#menu">Menü</a>
+            <a href="#products">Ürünler</a>
+            <a href="#about">Hakkında</a>
+            <a href="#review">Yorumlar</a>
+            <a href="#contact">İletişim</a>
+            <a href="#blogs">Bloglar</a>
+        </nav>
+        <div class="buttons">
+            <button class="ara" id="search-toggle">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button>
+                <a href="/sepet.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>                
+            </button>
+            <button id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="search">
+                <input type="text" class="search-inputs" id = "search-box" placeholder="ARA">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+            <!-- Sadece 3 çizgi menüsüne tıklandığında açılan navbar -->
+        <nav class="navbar mobile-navbar">
+            <a href="#home" class="active">Anasayfa</a>
+            <a href="#menu">Menü</a>
+            <a href="#products">Ürünler</a>
+            <a href="#about">Hakkında</a>
+            <a href="#review">Yorumlar</a>
+            <a href="#contact">İletişim</a>
+            <a href="#blogs">Bloglar</a>
+        </nav>
+        <div class="register">
+            <button class="btn" onclick="window.location.href='/register.html';">Kayıt ol</button>
+            <button class="btn" onclick="window.location.href='/login.html';">Giriş yap</button>            
+        </div>
+    </header>
+    <!--! Header Bitisi-->
+
+    <!--! Home section Baslanisi-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3><mark>HAYALLERINIZDEKI PASTALAR</mark></h3>
+            <h3 class="burada"><mark>BURADA!</mark></h3>
+            <p><mark>"Lezzetin ve tasarımın buluştuğu özel pastalarımızla her kutlamayı <br>unutulmaz kılıyoruz. Taze malzemelerle hazırlanan, <br>size özel tasarımlar için hemen sipariş verin!"</mark></p>
+            <a href="#" class="btn"><strong>SİPARİŞ VER</strong></a>
+        </div>
+    </section>
+    <!--! Home section Bitisi-->
+        
+    <!--! Menu Baslanisi-->
+    <section class="menu" id="menu">
+        <h1 class="heading"><strong><span>MENÜLERİMİZ</span></strong></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="pastaResimleri/cake-4433123_1920.jpg" alt="menu">
+                    <span class="menu-category">PASTA</span>
+                    <h3>Düğün Pastası</h3>
+                    <div class="price">3500 ₺ <span class="old-price">4000 ₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn"><strong>Sepete Ekle</strong></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="pastaResimleri/cheese-cake-7896245.jpg" alt="menu">
+                    <span class="menu-category">PASTA</span>
+                    <h3>Cheese Cake</h3>
+                    <div class="price">800 ₺ <span class="old-price">1000 ₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn"><strong>Sepete Ekle</strong></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="pastaResimleri/desert-7743456.jpg" alt="menu">
+                    <span class="menu-category">PASTA</span>
+                    <h3>Özel Pastalar</h3>
+                    <div class="price">2500 ₺ <span class="old-price">3000 ₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn"><strong>Sepete Ekle</strong></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="pastaResimleri/cakes-8858626.jpg" alt="menu">
+                    <span class="menu-category">PASTA</span>
+                    <h3>Gündelik Pastalar</h3>
+                    <div class="price">1200 ₺ <span class="old-price">1500 ₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn"><strong>Sepete Ekle</strong></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! Menu Bitisi-->
+
+    <!--! Menu Diger Urunler Baslanisi-->
+    <section class = "products" id="products">
+        <h1 class="heading"><strong><span>DİĞER ÜRÜNLER</span></strong></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">BAKLAVA</span>
+                    <a href="#" class="name">ANTEP BAKLAVASI</a>
+                </div>
+                <div class="image">
+                    <img src="pastaResimleri/11030199.jpg">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">600 ₺</b>
+                        <span class="amount"><br>1kg / 2.876 kcal</span>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="fa-regular fa-square-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">DONUTLAR</span>
+                    <a href="#" class="name">KARIŞIK DONUT</a>
+                </div>
+                <div class="image">
+                    <img src="pastaResimleri/pexels-cottonbro-4686958.jpg">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">90 ₺</b>
+                        <span class="amount"><br>Adet / 438 kcal</span>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="fa-regular fa-square-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">MAKARON</span>
+                    <a href="#" class="name">KARIŞIK MAKARON</a>
+                </div>
+                <div class="image">
+                    <img src="pastaResimleri/macaroons-5510757.jpg">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">300 ₺</b>
+                        <span class="amount"><br>5'li makaron / 365 kcal</span>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="fa-regular fa-square-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">KRUVASAN</span>
+                    <a href="#" class="name">KRUVASAN</a>
+                </div>
+                <div class="image">
+                    <img src="pastaResimleri/croissant-5524176.jpg">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">90 ₺</b>
+                        <span class="amount"><br>Adet / 100gr / 406 kcal</span>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="fa-regular fa-square-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! Menu Diger Urunler Bitisi-->
+    <script>
+            
+// "Sepete Ekle" butonları için tıklama olayını ekliyoruz
+document.querySelectorAll(".btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const urunDiv = e.target.closest(".box"); // En yakın ürün kutusunu seçiyoruz
+    urunSepeteEkle(urunDiv); // Ürünü sepete ekliyoruz
+  });
+});
+
+// Artı ikonları için tıklama olayını ekliyoruz
+document.querySelectorAll(".fa-square-plus").forEach((icon) => {
+  icon.addEventListener("click", (e) => {
+    e.preventDefault();
+    const urunDiv = e.target.closest(".box"); // En yakın ürün kutusunu seçiyoruz
+    urunSepeteEkle(urunDiv); // Ürünü sepete ekliyoruz
+  });
+});
+
+// Ürünü sepete ekleyen ortak fonksiyon
+function urunSepeteEkle(urunDiv) {
+  if (!urunDiv) return; // Eğer ürün kutusu bulunamazsa işleme devam etmeyiz
+
+  const UrunAdi = urunDiv.querySelector(".name")?.innerText || urunDiv.querySelector("h3").innerText;
+  const UrunFiyati = parseInt(urunDiv.querySelector(".price").innerText.split(" ")[0]);
+  const UrunFotografi = urunDiv.querySelector("img").src;
+
+  // Sepet bilgilerini tarayıcıda localStorage'a kaydediyoruz
+  let sepet = JSON.parse(localStorage.getItem("sepet")) || [];
+  sepet.push({ UrunAdi, UrunFiyati, UrunFotografi });
+  localStorage.setItem("sepet", JSON.stringify(sepet));
+
+  // Başarı mesajı göster
+  alert("Ürünleriniz başarıyla sepete eklendi!");
+}
+
+    </script>
+
+    <!--! Menu Hakkinda Baslanisi-->
+    <section class="about" id="about">
+        <h1 class="heading"><strong><span>HAKKINDA</span></strong></h1>
+        <div class="row">
+            <div class="image">
+                <img src="pastaResimleri/cake-8233676.jpg" alt="about">
+            </div>
+            <div class="content">
+                <h3><strong>1976'dan Beri Tatlı Bir Gelenek!</strong></h3>
+                <p>
+                    Tatlıya dair her şeyin en iyisini sunmak için yola çıktık. Aile geleneğimiz olan bu lezzet serüveninde, 1976 yılından beri sizlere hizmet etmekten mutluluk duyuyoruz. Web sitemizde sadece pasta değil; baklava, cheesecake, kruvasan, donut, makaron ve daha birçok tatlı çeşidini bulabilirsiniz.
+                    Her bir ürünümüz, usta eller tarafından özenle hazırlanır ve sizlere en taze, en lezzetli haliyle sunulur. Misyonumuz; özel günlerinize, sevdiklerinizle paylaştığınız anlarınıza lezzet katmak ve yüzünüzde bir tebessüm oluşturmaktır.  
+                    Tatlı bir dünyaya adım atmak için doğru yerdesiniz! 🌟
+                </p>
+                <a href="#" class="btn">Daha Fazlası</a>
+            </div>
+        </div>
+    </section>
+    <!--! Menu Hakkinda Bitisi-->
+
+    <!--! Yorum Kismi Baslanisi-->
+    <section class="review" id="review">
+        <h1 class="heading"><strong><span>MÜŞTERİ YORUMLARI</span></strong></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="icons/quote.png" alt="quote">
+                <p>"Harika bir deneyim yaşadım! 🎂 Sipariş verdiğim pasta tam zamanında ve inanılmaz taze bir şekilde teslim edildi. Sadece pastalar değil, baklava ve kruvasanları da denedim; her biri ayrı bir lezzet şöleni! Hem görsel olarak şık hem de lezzet olarak mükemmel. Kesinlikle tekrar sipariş vereceğim. Tatlı krizim için en doğru adres burası! ❤️"</p>
+                <img class = "user" src="icons/HenryCavill.jpg">
+                <h3>Henry Cavill</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="icons/quote.png" alt="quote">
+                <p>
+                    "İlk kez sipariş verdim ve bu kadar memnun kalacağımı tahmin etmemiştim! 🍰 Cheesecake harikaydı, tam kıvamında ve çok lezzetliydi. Ayrıca makaronların tazeliği ve rengi muhteşemdi. Paketleme de özenle yapılmıştı, ürünler hiçbir zarar görmeden elime ulaştı. Kesinlikle güvenilir ve lezzet dolu bir adres, herkese tavsiye ederim! ⭐⭐⭐⭐⭐"
+                </p>
+                <img class = "user" src="icons/MargotRobbie.jpg">
+                <h3>Margot Robbie</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="icons/quote.png" alt="quote">
+                <p>
+                    "Tatlı kızım için hızlıca sipariş verdim ve sonuç harikaydı! Baklavalar tam anlamıyla çıtır çıtır, taptaze ve çok lezzetliydi. Donut ve kruvasanlar da yumuşacık ve ağızda dağılıyordu. Böyle kaliteli ürünler bulmak zor. Kesinlikle tekrar sipariş vereceğim. Ellerinize sağlık! 🌟🍩"
+                </p>
+                <img class = "user" src="icons/BradPitt.jpg">
+                <h3>Brad Pitt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! Yorum Kismi Bitisi-->
+
+    <!--! Iletisim Kismi Baslanisi-->
+    <section class="contact" id="contact">
+        <h1 class="heading"><strong><span>İLETİŞİM</span></strong></h1>
+        <div class="row">
+            <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.5272054253799!2d29.045718181233035!3d41.02287509233841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac81d5bfcea7d%3A0x29e4ef7c40556a8!2s%C4%B0stanbul%20Topkap%C4%B1%20%C3%9Cniversitesi%20Altunizade%20Yerle%C5%9Fkesi!5e0!3m2!1str!2str!4v1734467960712!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form>
+                <h3>BİZE ULAŞIN</h3>
+                <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Ad Soyad">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-phone"></i>
+                    <input type="number" placeholder="Telefon Numara">
+                </div>
+                <input type="submit" class="btn" value="GÖNDER">
+            </form>
+        </div>
+    </section>
+    <!--! Iletisim Kismi Bitisi-->
+
+    <!--! Blog Kismi Baslanisi-->
+    <section class="blog" id="blogs">
+        <h1 class="heading"><strong><span>BLOGLARIMIZ</span></strong></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="pastaResimleri/932034.jpg">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Nasıl Harika Bir Pasta Yapıyoruz?</a>
+                    <span>by Janice Wong / 18.12.2024</span>
+                    <p>
+                        Her pasta, bir sanat eseridir ve biz bu sanat eserlerini yaratmak için tutkuyla çalışıyoruz! İlk olarak, en kaliteli malzemeleri seçerek başlıyoruz. Doğal tereyağı, taze meyveler, ve ince çekilmiş un gibi en iyilerle çalışıyoruz. Ardından, usta şeflerimiz tariflerini özenle uygulayarak her katmanı büyük bir hassasiyetle hazırlar.
+                    </p>
+                    <a href="#" class="btn">Daha Fazla</a>
+                 </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="pastaResimleri/ai-generated-8675363.jpg">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Tatlılarımızı Özel Kılan Nedir?</a>
+                    <span>by Nina Métayer / 19.12.2024</span>
+                    <p>
+                        Her tatlımızın arkasında yılların deneyimi ve özel tariflerimiz saklı. Geleneksel yöntemlerle hazırladığımız ürünlerimize modern dokunuşlar ekleyerek tatlı severler için eşsiz lezzetler yaratıyoruz. Kullandığımız malzemelerin tamamı doğal ve taze; katkı maddesi kullanmadan doğallığı koruyoruz.
+                    </p>
+                    <a href="#" class="btn">Daha Fazla</a>
+                 </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="pastaResimleri/ai-generated-7932953.jpg">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Tatlılarda Tazelik Sırrımız</a>
+                    <span>by Cédric Grolet / 20.12.2024</span>
+                    <p>
+                        Her lezzet, taze bir başlangıçla başlar! Tatlılarımızı siparişe özel hazırlıyor ve her zaman en taze haliyle sizlere sunuyoruz. Meyvelerimizi günlük olarak seçiyor, hamur işlerimizi doğal mayalama yöntemleriyle hazırlıyoruz. Bu titizlik, tatlılarımızda hem lezzeti hem de kalitesini hissedebilmeniz için en önemli adımımız.
+                    </p>
+                    <a href="#" class="btn">Daha Fazla</a>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <!--! Blog Kismi Bitisi-->
+
+    <!--! Footer Kismi Baslanisi-->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="ARA">
+            <button class="btn btn-primary">ARA</button>
+        </div>
+        <div class="share">
+            <a href="https://www.instagram.com/a.mecid_nasir"target="_blank"><img src="social media icons/social.png"></a>
+            <a href="https://www.linkedin.com/in/abdulmecid-nasir-546457294/"target="_blank"><img src="social media icons/linkedin.png"></a>
+            <a href="https://github.com/AbdulmecidNasir" target="_blank"><img src="social media icons/github.png"></a>
+            <a href="abdumajidabdulkhaev@stu.topkapi.edu.tr"target="_blank"><img src="social media icons/email.png"></a>
+            <a href="https://x.com/abdulmecid_404"target="_blank"><img src="social media icons/twitter.png"></a>
+        </div>
+        <div class="links">
+            <a href="#" class="active">Anasayfa</a>
+            <a href="#">Menü</a>
+            <a href="#">Ürünler</a>
+            <a href="#">Hakkında</a>
+            <a href="#">Yorumlar</a>
+            <a href="#">İletişim</a>
+            <a href="#">Bloglar</a>
+        </div>
+        <div class="credit">
+            Created by <span>Abdulmecid Nasir</span> | All Rights Reserved
+        </div>
+    </section>
+     <!--! Footer Kismi Bitisi-->
+     <script src="script.js"></script>
+  </body>
+</html>

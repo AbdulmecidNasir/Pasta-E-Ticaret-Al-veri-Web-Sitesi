@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sepetim</title>
+  <link rel="stylesheet" href="sepet.css">
+</head>
+<body>
+  <h1>Sepetim</h1>
+  <div id="sepet-container"></div>
+  <button id="alisveris-tamamla">Alışverişi Tamamla</button>
+
+  <script>
+    const sepetContainer = document.getElementById("sepet-container");
+    const sepet = JSON.parse(localStorage.getItem("sepet")) || [];
+
+    if (sepet.length === 0) {
+      sepetContainer.innerHTML = "<p>Sepetiniz boş!</p>";
+    } else {
+      sepet.forEach((urun, index) => {
+        const urunDiv = document.createElement("div");
+        urunDiv.classList.add("urun");
+
+        urunDiv.innerHTML = `
+          <img src="${urun.UrunFotografi}" alt="${urun.UrunAdi}">
+          <h3>${urun.UrunAdi}</h3>
+          <p>Fiyat: ${urun.UrunFiyati} ₺</p>
+          <button onclick="urunSil(${index})">Ürünü Sil</button>
+        `;
+
+        sepetContainer.appendChild(urunDiv);
+      });
+    }
+
+    // Ürün silme fonksiyonu
+    function urunSil(index) {
+      let sepet = JSON.parse(localStorage.getItem("sepet")) || [];
+      sepet.splice(index, 1); // İlgili ürünü listeden kaldır
+      localStorage.setItem("sepet", JSON.stringify(sepet));
+      location.reload(); // Sayfayı yenileyerek güncel listeyi göster
+    }
+
+    // Alışverişi Tamamla
+    document.getElementById("alisveris-tamamla").addEventListener("click", () => {
+      localStorage.removeItem("sepet"); // Sepeti temizle
+      alert("Alışverişiniz tamamlandı!");
+      location.reload(); // Sayfayı yenileyerek boş sepet göster
+    });
+  </script>
+  <!-- sepet.html -->
+<form id="sepetForm">
+  <input type="text" id="UrunAdi" placeholder="Ürün Adı" required />
+  <input type="number" id="UrunFiyati" placeholder="Ürün Fiyatı" required />
+  <input type="text" id="UrunFotografi" placeholder="Ürün Fotoğrafı" required />
+  <button type="submit">Sepete Ekle</button>
+</form>
+
+<script>
+  document.getElementById("sepetForm").addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const UrunAdi = document.getElementById("UrunAdi").value;
+    const UrunFiyati = document.getElementById("UrunFiyati").value;
+    const UrunFotografi = document.getElementById("UrunFotografi").value;
+
+    const response = await fetch("/sepet/ekle", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        UrunAdi,
+        UrunFiyati,
+        UrunFotografi,
+      }),
+    });
+
+    const result = await response.text();
+    alert(result); // Sepet ekleme yanıtını gösterir
+  });
+</script>
+
+</body>
+</html>

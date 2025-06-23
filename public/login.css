@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+html {
+    font-size: 55.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}
+body {
+    background: url("pastaResimleri/top-view-delicious-sliced-pie-with-red-berries-dark-floor-sweet-pie-cake.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* Form Box */
+.form-box {
+    position: relative;
+    width: 500px;
+    padding: 40px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+}
+.nav-menu ul
+{
+    display: flex;
+    
+}
+.nav-menu ul li
+{
+    list-style: none;
+    font-size: 28px;
+    margin-top: -50px;
+    margin-left: 150px;
+}
+.nav-menu ul li .link
+{
+    text-decoration: none;
+    font-weight: 700;
+    color: #f3ecec;
+    padding-bottom: 10px;
+    margin: 0 20px;
+    
+}
+.link:hover, .active
+{
+    border-bottom: 2px solid #fff;
+}
+.nav-button {
+    display: flex; /* Butonların yan yana görünmesini sağlar */
+    justify-content: flex-end; /* Sağ tarafa hizalar */
+    gap: 15px; /* Butonlar arasındaki boşluğu ayarlar */
+    margin-right: -400px; /* Sağ tarafa boşluk bırakır */
+    margin-top: -70px;
+}
+.nav-button .btn
+{
+    width: 145px;
+    height: 45px;
+    font-weight: 400;
+    background: rgb(250, 234, 234);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3 ease;   
+    
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.top span {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.top span a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+.top span a:hover {
+    text-decoration: underline;
+}
+
+/* Input Boxes */
+.input-box {
+    position: relative;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.input-field {
+    font-size: 1.6rem;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 12px 20px 12px 50px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    outline: none;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Submit Button */
+.submit {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.6rem;
+    background: #ff4081;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+
+.submit:hover {
+    background: #e73370;
+}
+
+/* Two Column Options */
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.two-col label a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+.two-col label a:hover {
+    text-decoration: underline;
+}

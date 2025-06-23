@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+html
+{
+    font-size: 55,5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    position:relative;
+}
+html::-webkit-scrollbar
+{
+    width: 0.3rem;
+    background-color: rgb(248, 239, 239);
+}
+html::-webkit-scrollbar-track
+{
+    border-radius: 1rem;
+    background-color: rgb(245, 250, 243);
+}
+html::-webkit-scrollbar-thumb
+{
+    border-radius: 1rem;
+    background-color: rgb(6, 6, 6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body
+{
+    background: url("pastaResimleri/top-view-delicious-sliced-pie-with-red-berries-dark-floor-sweet-pie-cake.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Tam pencere yüksekliği */
+    width: 100vw; /* Tam pencere genişliği */
+}
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+
+}
+.nav
+{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgb(246, 10, 222) transparent);
+    z-index: 100;
+}
+.nav-logo 
+{
+    background-size: cover; /* Resmi kapsayıcıya uyacak şekilde ayarla */
+    background-position: center; /* Ortalar */
+    margin-top: 20px;
+}
+.nav-logo img
+{
+    width: 90px; /* Genişlik */
+    height: 90px; /* Yükseklik */
+}
+.nav-menu ul
+{
+    display: flex;
+    margin-right: 180px;
+}
+.nav-menu ul li
+{
+    list-style: none;
+}
+.nav-menu ul li .link
+{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 20px;
+    margin-left: 350px;
+}
+.link:hover, .active
+{
+    border-bottom: 2px solid #fff;
+}
+.nav-button {
+    display: flex; /* Butonların yan yana görünmesini sağlar */
+    justify-content: flex-end; /* Sağ tarafa hizalar */
+    gap: 15px; /* Butonlar arasındaki boşluğu ayarlar */
+    margin-left: 250px; /* Sağ tarafa boşluk bırakır */
+    margin-top: 40px;
+}
+.nav-button .btn
+{
+    width: 145px;
+    height: 45px;
+    font-weight: 400;
+    background: rgb(250, 234, 234);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3 ease;   
+    
+}
+.btn:hover
+{
+    background: rgba(255, 255, 255, 0.3);
+}
+#registerBtn
+{
+    margin-left: 15px;   
+}
+.btn.white-btn
+{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover
+{
+    background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn
+{
+    display:none;
+}
+.form-box
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 512px;
+    height: 429px;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.register-container
+{
+    right : -520px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    transition: .5 ease-in-out;
+    margin-right: 450px;
+}
+
+.top span
+{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    margin-top: -30px;
+    margin-left: 190px;
+    
+}
+.top span a
+{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+header
+{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0 40px 0;
+    margin-top: 10px;
+}
+.input-row 
+{
+    display: inline; /* Ad ve Soyad inputlarını yan yana hizalamak için */
+    gap: 7px; /* Aralarındaki boşluk */
+}
+.input-box 
+{
+    position: relative; /* İkonun yerleşimini kontrol etmek için */
+    width: 100%; /* Standart genişlik */
+}
+
+.input-field
+{
+    font-size: 17px;
+    background: rgba(221, 197, 197, 0.677);
+    height: 50px;
+    width: 100%;
+    padding: 0 20px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2 ease;
+}
+.email-box
+{
+    margin-top: 10px;
+    width: 100%;
+}
+.input-field:hover, .input-field:focus
+{
+    background: rgba(255, 255, 255, 0.25)
+}
+::-webkit-input-placeholder
+{
+    color: #000000;
+}
+.input-box i
+{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #140808;
+}
+.submit
+{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+.submit:hover
+{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col
+{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+.two-col .one
+{
+    display: flex;
+    gap: 5px;
+}
+.two label a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.two label a:hover
+{
+    text-decoration: underline;
+}
